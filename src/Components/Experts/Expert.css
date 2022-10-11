@@ -1,0 +1,60 @@
+.expert{
+    margin: 150px 0;
+}
+
+.expert .container {
+    display: grid;
+    grid-template-columns: repeat( auto-fill , minmax(350px , 1fr));
+    margin-top: 50px;
+    gap: 40px;
+    justify-content: center;
+    align-content: center;
+}
+.expert .container .box {
+    box-shadow: 4px 2px 20px rgba(0, 0, 0, 0.1);
+    padding: 30px 10px;
+    padding-left: 30px;
+}
+
+
+.expert .container .box span {
+    display: block;
+    margin: 10px 0;
+    color: var(--main-color);
+    font-weight: bold;
+}
+
+.expert .container .box h2{
+
+    color: #333;
+    margin-bottom: 10px;
+}
+.expert .container .box p{
+    color: #777;
+    line-height: 30px;
+
+}
+
+.expert .container .box .icons{
+    display: flex;
+    margin-top: 20px;
+
+}
+.expert .container .box .icons i{
+    color: #333;
+    display: block;
+    transition: 0.3s;
+    margin-right: 10px;
+    cursor: pointer;
+    margin-bottom: 10px;
+}
+
+.expert .container .box .icons i:hover{
+    color: var(--main-color);
+}
+
+@media (max-width:768px) {
+    .expert .container .box img{
+        width: 100%;
+    }
+}

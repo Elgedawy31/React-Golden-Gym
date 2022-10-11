@@ -1,0 +1,97 @@
+.login img{
+    position: absolute;
+    left: 0;
+    height: 0;
+    width: 100%;
+    height: 100vh;
+    z-index: -1;
+}
+
+.login .content {
+    position: absolute;
+    width: 500px;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50% , -50%);
+    background-color: white;
+    padding: 30px 30px;
+    border-radius: 20px;
+}
+
+.login .content h2{
+    text-align: center;
+    font-size: 35px;
+    text-transform: uppercase;
+}
+
+.login .content .box span{
+    color: #333;
+    display: block;
+    margin-bottom: 10px;
+}
+
+.login .content .box .input input{
+    
+    margin-bottom: 20px;
+    border: none;
+    border-bottom: 1px solid rgba(0, 0, 0, 0.3);
+    padding: 20px;
+    width: 100%;
+    border-radius: 10px;
+    transition: 0.5s;
+}
+.login .content .box .input input:focus{
+    outline: none;
+}
+.login .content a{
+    width: fit-content;
+    display: flex;
+    margin-left: auto;
+}
+.login .content button{
+        display: block;
+        margin: auto;
+        border: navajowhite;
+        background: #4caee7;
+        color: wheat;
+        padding: 15px 20px;
+        font-size: 28px;
+        width: 100%;
+        margin-top: 30px;
+        border-radius: 10px;
+        cursor: pointer;
+}
+
+.login .content .span {
+    display: block;
+    width: fit-content;
+    margin: 40px auto;
+    color: #333;
+}
+.login .content .icons{
+    width: fit-content;
+    margin: auto;
+}
+.login .content i {
+    width: 50px;
+    background: red;
+    text-align: center;
+    height: 50px;
+    line-height: 50pxco;
+    line-height: 50px;
+    color: white;
+    font-size: 31px;
+    border-radius: 50%;
+    margin-left: 30px;
+    cursor: pointer;
+}
+
+.login .content i:nth-child(1){
+    background-color: #3b5998;
+}
+.login .content i:nth-child(2){
+    background-color: #1da1f2;
+}
+.login .content i:nth-child(3){
+    background-color: #ea4335;
+}

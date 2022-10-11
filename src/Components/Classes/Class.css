@@ -1,0 +1,100 @@
+.class{
+    margin-top: 100px;
+    margin-bottom: 100px;
+}
+.class .container {
+    margin-top: 80px;
+    display: flex;
+}
+.class .container .left {
+    width: 400px;
+}
+
+.class .left .box{
+    align-items: center;
+    display: flex;
+    padding: 30px;
+    margin-bottom: 30px;
+    box-shadow: 4px 2px 20px rgba(0, 0, 0, 0.1);
+    cursor: pointer;
+
+    
+}
+.class .left .box img{
+    margin-right: 30px;
+
+}
+.class .left button{
+    width: 100%;
+    padding: 20px 7px;
+}
+
+.class .container .right {
+    flex: 1;
+    margin-left: 70px;
+}
+.class .container .right img {
+    width: 100%;
+}
+
+.class .container .right h2 {
+    margin: 20px 0;
+    color: #333;
+}
+.class .container .right p {
+    color: #777;
+    line-height: 30px;
+    margin-bottom: 20px;
+}
+
+@media (max-width: 992px) {
+    
+    .class .container .left {
+        width: 250px;
+    }
+    .class .left .box img {
+        margin-right: 10px;
+    }
+    .class .left .box h3{
+        font-size: 14px;
+    }
+    .class .left button {
+        font-size: 15px;
+    }
+    .class .container .right {
+        margin-left: 20px;
+    }
+
+    .class .left .box {
+        padding: 22px;
+    }
+
+}
+
+@media (max-width: 768px) {
+    .class .container {
+        display: block;
+        margin: 0 30px ;
+        margin-top: 30px;
+
+    }
+    .class .container .left {
+        width: 100%;
+        margin-bottom: 40px;
+    }
+    .class .left .box {
+        padding: 30px;
+    }
+    .class .left .box img {
+        margin-right: 30px;
+    }
+    .class .left .box h3 {
+        font-size: 20px;
+    }
+    .class .left button {
+        font-size: 25px;
+    }
+    .class .container .right {
+        margin: 0;
+    }
+}

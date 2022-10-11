@@ -1,0 +1,107 @@
+.logo{
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    z-index: 99;
+}
+a.active{
+    color: var(--main-color);
+}
+.logo .overlay {
+    background-color: rgba(177,180,200,0.1);
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    z-index: -1;
+}
+.logo .container{
+    display: flex;
+    padding: 30px 0;
+    align-items: center;
+    justify-content: space-between;
+    
+}
+.logo .container h2 {
+    color: white;
+    text-transform: uppercase;
+    font-size: 35px;
+    font-weight: bolder;
+}
+.logo .container h2 span{
+
+    color: var(--main-color);
+}
+
+
+.logo .container nav ul {
+    display: flex;
+}
+.logo .container nav ul li a {
+        color: white;
+        margin-right: 25px;
+        font-size: 18px;
+}
+
+.logo .container button{
+    text-transform: uppercase;
+    font-weight: normal;
+    font-size: 18px;
+    border-radius: 0;
+}
+.container i{
+    display: none;
+}
+
+
+
+
+@media (max-width: 992px) {
+    .logo .container i{
+        display: block;
+        position: absolute;
+        right: 20px;
+        color: wheat;
+        color: white;
+        font-size: 22px;
+        cursor: pointer;
+    }
+    .logo .container{
+        justify-content: center;
+    }
+    .logo .container .hiden {
+        display: none;
+    }
+    .logo .container .show {
+        display: block;
+        position: absolute;
+        top: 100%;
+        right: 0;
+    }
+    .logo .container .show ul{
+        display: block;
+        background-color: white;
+        width: 200px;
+        z-index: 1000;
+        position: relative;
+    }
+    .logo .container .show ul li a{
+        display: block;
+        transition: 0.3s;
+        margin-right: 0;
+        padding: 10px 30px;
+        color: var(--main-color);
+    }
+    .logo .container .show ul :not(:first-child){
+        margin-top: 30px;
+    }
+    .logo .container .show ul li a:hover{
+        background-color: var(--main-color);
+        color: white;
+    }
+    .logo .container button{
+        display: none;
+    }
+
+    
+}

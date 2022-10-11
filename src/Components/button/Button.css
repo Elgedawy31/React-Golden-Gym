@@ -1,0 +1,17 @@
+.btn {
+    background-color: var(--main-color);
+    color: white;
+    width: -moz-fit-content;
+    width: fit-content;
+    display: block;
+    padding: 10px 12px;
+    border-radius: 7px;
+    font-size: 22px;
+    letter-spacing: 1px;
+    cursor: pointer;
+    border: none;
+}
+
+.btn:focus{
+    outline: none;
+}

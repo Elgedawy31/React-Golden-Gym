@@ -1,0 +1,66 @@
+.qute{
+    margin-top: 50px;
+    margin-bottom: 50px;
+}
+
+.mohtawa{
+    position: relative;
+}
+.mohtawa img{
+    width: 100%;
+    height: 50vh;
+
+}
+
+.qute .mohtawa .content {
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+}
+
+.qute .mohtawa .content h1{
+    color: white;
+    font-size: 50px;
+}
+
+.qute .mohtawa .content h1 span{
+    color: var(--main-color);
+}
+.qute .mohtawa .content p {
+    color: white;
+    line-height: 30px;
+}
+.qute .mohtawa .content button{
+    display: inline-block;
+    border-radius: 0;
+    text-transform: uppercase;
+    margin-top: 30px;
+}
+
+@media (max-width: 992px) {
+    
+    .qute .mohtawa .content h1 {
+        font-size: 33px;
+    }
+    .mohtawa img{
+        height: 40vh;
+    }
+}
+
+@media (max-width: 768px) {
+    
+    .qute .mohtawa .content h1 {
+        font-size: 19px;
+    }
+
+    .qute .mohtawa .content p {
+        font-size: 13px;
+    }
+    .qute .mohtawa .content button {
+        font-size: 13px;
+        font-weight: normal;
+    }
+
+}
